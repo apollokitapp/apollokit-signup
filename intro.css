@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Open Sans';
+  overflow-y:hidden;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  display: none;
+}
+
+.title {
+  font-family: 'Baloo Da';
+  font-size: 50px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.subtitle {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.info {
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.action {
+  margin-top: 50px;
+}
+
+input[type=text] {
+  color: #000000;
+}
+
+/*input[type=text], input[type=email] {
+  background-color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  height: 50px;
+  width: 300px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  color: #000000;
+  outline: none;
+  padding: 8px 10px;
+}*/
+
+
+/* Mobile, Ipad, ETC */
+@media (max-width: 800px) {
+
+  .container {
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  .title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .info {
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+  }
+
+  .action {
+    text-align: center;
+  }
+
+  .signup-button {
+    width: 80%;
+    margin: auto;
+  }
+
+
+}
+
+/* iPad Fix */
+@media(device-width: 768px) {
+
+  .container {
+    transform: translate(0%, 40%);
+    width: 400px;
+  }
+
+}
+
+@media(max-width: 414px) {
+  .container {
+    transform: none !important;
+    width: 100% !important;
+    margin-top: 0% !important;
+  }
+  .title {
+    height: 220px;
+    line-height: 220px;
+  }
+  .info {
+    font-size: 16px;
+    margin-top: 30px !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0,0,0,0.8);
+  }
+  .action {
+    margin-top: 20px !important;
+  }
+}
