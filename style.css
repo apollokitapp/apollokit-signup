@@ -50,6 +50,10 @@ body {
   line-height: 24px;
 }
 
+.action {
+  margin-top: 50px;
+}
+
 input[type=text] {
   color: #000000;
 }
