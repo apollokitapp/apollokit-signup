@@ -117,6 +117,9 @@ input[type=text] {
 }
 
 @media(max-width: 414px) {
+  body {
+    background-image: url('background-mobile.jpg');
+  }
   .container {
     transform: none !important;
     width: 100% !important;
