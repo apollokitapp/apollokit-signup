@@ -78,4 +78,28 @@ input[type=text] {
     margin-top: 0px;
   }
 
+  .title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .info {
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+  }
+
+  .action {
+    text-align: center;
+  }
+
+  .signup-button {
+    width: 80%;
+    margin: auto;
+  }
+
+
 }
