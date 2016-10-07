@@ -9,6 +9,7 @@ $(document).ready(function() {
       showCancelButton: true,
       closeOnConfirm: false,
     }, function(emailAddress){
+
       if (emailAddress && emailAddress.length > 0) {
         $.ajax({
           url: 'https://formspree.io/apollokitapp_signup@gmail.com',
@@ -16,7 +17,7 @@ $(document).ready(function() {
           data: { message: emailAddress },
           dataType: 'json',
           success: function() {
-            swal("Thanks! Stay Tuned. :)", "success");
+            swal("Thanks!", "Stay Tuned. :)", "success");
           }
         });
       }
