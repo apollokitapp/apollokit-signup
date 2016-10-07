@@ -9,17 +9,17 @@ $(document).ready(function() {
       showCancelButton: true,
       closeOnConfirm: false,
     }, function(emailAddress){
-
-      $.ajax({
-        url: 'https://formspree.io/apollokitapp_signup@gmail.com',
-        method: 'post',
-        data: { message: emailAddress },
-        dataType: 'json',
-        success: function() {
-          swal("Thanks! Stay Tuned. :)");
-        }
-      });
-
+      if (emailAddress && emailAddress.length > 0) {
+        $.ajax({
+          url: 'https://formspree.io/apollokitapp_signup@gmail.com',
+          method: 'post',
+          data: { message: emailAddress },
+          dataType: 'json',
+          success: function() {
+            swal("Thanks! Stay Tuned. :)", "success");
+          }
+        });
+      }
     });
   });
 });
