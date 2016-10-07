@@ -50,7 +50,11 @@ body {
   line-height: 24px;
 }
 
-input[type=text], input[type=email] {
+input[type=text] {
+  color: #000000;
+}
+
+/*input[type=text], input[type=email] {
   background-color: #ffffff;
   font-size: 20px;
   line-height: 30px;
@@ -61,7 +65,7 @@ input[type=text], input[type=email] {
   color: #000000;
   outline: none;
   padding: 8px 10px;
-}
+}*/
 
 @media (max-width: 667px) {
 
