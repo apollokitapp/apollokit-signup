@@ -71,7 +71,9 @@ input[type=text] {
   padding: 8px 10px;
 }*/
 
-@media (max-width: 667px) {
+
+/* Mobile, Ipad, ETC */
+@media (max-width: 800px) {
 
   .container {
     padding: 20px;
@@ -102,4 +104,22 @@ input[type=text] {
   }
 
 
+}
+
+/* iPad Fix */
+@media(device-width: 768px) {
+
+  .container {
+    transform: translate(0%, 40%);
+    width: 400px;
+  }
+
+}
+
+@media(max-width: 414px) {
+  .container {
+    transform: none !important;
+    width: 100% !important;
+    margin-top: 4%;
+  }
 }
