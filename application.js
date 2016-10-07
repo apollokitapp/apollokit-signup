@@ -13,18 +13,22 @@ $(document).ready(function() {
 
     swal({
       title: "Signup",
-      text: 'We\'re still building, enter your email address or phone number to be notifed when we launch.',
+      text: 'We\'re still building, enter your email address to be notifed when we launch.',
       type: 'input',
       showCancelButton: true,
       closeOnConfirm: false,
-      inputPlaceholder: 'Email Address or SMS Number',
+      inputPlaceholder: 'Email Address',
     }, function(emailAddress){
 
       if (emailAddress && emailAddress.length > 0) {
         $.ajax({
-          url: 'https://formspree.io/apollokitapp_signup@gmail.com',
+          // url: 'https://formspree.io/apollokitapp_signup@gmail.com',
+          url: '//apollokit.us14.list-manage.com/subscribe/post?u=77d87afdaea36d92f3f6e53dd&amp;id=0e39055f79',
           method: 'post',
-          data: { message: emailAddress },
+          data: {
+            'EMAIL': emailAddress,
+            'b_77d87afdaea36d92f3f6e53dd_0e39055f79': null
+          },
           dataType: 'json',
           success: function() {
             swal("Thanks!", "Stay Tuned. :)", "success");
