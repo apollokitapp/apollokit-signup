@@ -1,7 +1,9 @@
 $(document).ready(function() {
   var subtitles = [
     "Looking for a better solution to Facebook Monetization? All you had to do was look to the moon.",
-    "Use ApolloKit to easily find, schedule, and post content on your Facebook Pages."
+    "Use ApolloKit to easily find, schedule, and post content on your Facebook Pages.",
+    "The moon may be 238,900 miles from home, but more Facebook Traffic is just a few clicks away.",
+    "That's one small step for man, and one giant leap for your Facebook Page Reach."
   ],
   subtitle = subtitles[Math.floor(Math.random() * subtitles.length)];
   $('.subtitle').html(subtitle);
