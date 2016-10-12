@@ -22,7 +22,7 @@ $(document).ready(function() {
 
       if (emailAddress && emailAddress.length > 0) {
         $.ajax({
-          url: 'https://formspree.io/apollokitapp.signup@gmail.com',
+          url: 'https://formspree.io/apollokitapp.signups@gmail.com',
           method: 'post',
           data: { message: emailAddress },
           dataType: 'json',
